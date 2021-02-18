@@ -1,0 +1,43 @@
+$background: #282a36;
+$text: #bcc2cd;
+$selection: #44475a;
+$foreground: #f8f8f2;
+$green: #50fa7b;
+$orange: #ffb86c;
+$purple: #bd93f9;
+$red: #ff5555;
+$yellow: #f1fa8c;
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 500 1.6rem Poppins;
+}
+
+body {
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $orange;
+    border-radius: 0.2rem;
+  }
+  
+  background-color: $background;
+  color: $text;
+
+  .span-red {
+    color: $red;
+  }
+
+  a {
+    text-decoration: none;
+    color: $orange;
+  }
+}

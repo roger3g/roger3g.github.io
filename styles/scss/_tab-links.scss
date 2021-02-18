@@ -1,0 +1,39 @@
+.tab-links {
+  margin-bottom: 3.2rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  button {
+    cursor: pointer;
+    background: transparent;
+    color: $foreground;
+
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 1.6rem;
+
+    border: none;
+    outline: none;
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 0.2rem;
+      width: 0%;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      background-color: $purple;
+      transition: .4s;
+    }
+
+    &:hover::after,
+    &.active::after {
+      width: 100%;
+    }
+  }
+}

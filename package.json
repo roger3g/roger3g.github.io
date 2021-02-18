@@ -1,0 +1,12 @@
+{
+  "name": "roger3g.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:sass": "sass --watch public/styles/scss/index.scss:public/styles/css/index.css --style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
