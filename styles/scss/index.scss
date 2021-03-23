@@ -1,5 +1,8 @@
 @import '_base.scss';
-@import '_header.scss';
-@import '_tabs.scss';
-@import '_change-theme.scss';
+@import '_screen-load.scss';
+@import '_section-intro.scss';
+@import '_section-about-me.scss';
+@import '_section-skills.scss';
 @import '_responsive.scss';
+
+// sass --watch styles/scss/index.scss:styles/css/index.css --style compressed

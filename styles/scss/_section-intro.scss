@@ -1,0 +1,59 @@
+.intro {
+  width: 100%;
+  height: 100vh;
+  // border: 1px solid red;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .intro-div {
+    // border: 1px solid red;
+
+    width: 60rem;
+    height: 40rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    h1 {
+      font-size: 3.5rem;
+    }
+    
+    #to-bottom {
+      width: 25rem;
+      height: 8rem;
+
+      opacity: 80%;
+      color: $color-title;
+
+      text-decoration: none;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: rgb(32, 32, 36);
+      border-radius: 0.4rem;
+      box-shadow: inset 0 0 0 0 $color-primary;
+      font-size: 2rem;
+      transition: ease-out 0.5s;
+
+      &:hover {
+        box-shadow: inset 30rem 0 0 0 $color-primary;
+      }
+    }
+  }
+
+  img {
+    width: 50rem;
+    height: 50rem;
+
+    opacity: 60%;
+  }
+}
