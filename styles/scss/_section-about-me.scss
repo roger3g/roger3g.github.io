@@ -6,12 +6,10 @@
   align-items: center;
   justify-content: space-evenly;
 
-  h2 {
-    font-size: 4rem;
-  }
-  
-  p {
-    width: 50rem;
-    margin-bottom: 4rem;
+  .content {
+    p {
+      width: 50rem;
+      margin-bottom: 4rem;
+    }
   }
 }

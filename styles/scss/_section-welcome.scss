@@ -1,14 +1,12 @@
-.intro {
+.welcome {
   width: 100%;
   height: 100vh;
-  // border: 1px solid red;
 
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 
-  .intro-div {
-    // border: 1px solid red;
+  .content {
 
     width: 60rem;
     height: 40rem;
@@ -30,6 +28,7 @@
       color: $color-title;
 
       text-decoration: none;
+      text-align: center;
 
       display: flex;
       align-items: center;
@@ -41,7 +40,7 @@
       background-color: rgb(32, 32, 36);
       border-radius: 0.4rem;
       box-shadow: inset 0 0 0 0 $color-primary;
-      font-size: 2rem;
+      font-size: 1.8rem;
       transition: ease-out 0.5s;
 
       &:hover {
@@ -53,7 +52,5 @@
   img {
     width: 50rem;
     height: 50rem;
-
-    opacity: 60%;
   }
 }

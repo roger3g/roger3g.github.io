@@ -1,8 +1,10 @@
 @import '_base.scss';
 @import '_screen-load.scss';
-@import '_section-intro.scss';
+@import '_section-welcome.scss';
 @import '_section-about-me.scss';
 @import '_section-skills.scss';
+@import '_section-projects.scss';
+@import '_section-contact.scss';
 @import '_responsive.scss';
 
 // sass --watch styles/scss/index.scss:styles/css/index.css --style compressed

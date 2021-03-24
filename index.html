@@ -3,20 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Title</title>
+  <title>Roger Luiz | Desenvolvedor Front-end</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/[type]" sizes="" href="">  
   <link rel="stylesheet" media="all" href="styles/css/index.css">
-
-  <script src="" type="text/javascript"></script>
 
 </head>
 <body>
 
-  <div class="screen-load" style="display: none;">
+  <div class="screen-load">
     <div class="pulse">
       <span style="--i:1;"></span>
       <span style="--i:2;"></span>
@@ -30,19 +26,19 @@
     </div>
   </div>
 
-  <section class="intro">
-    <div class="intro-div">
-      <h1>Roger Luiz, Desenvolvedor <br> Full stack Web</h1>
-      <a href="#about-me" id="to-bottom">Conheça-me</a>
+  <section class="welcome">
+    <div class="content">
+      <h1>Roger Luiz, Desenvolvedor <br> Front-end Web</h1>
+      <a href="#about-me" id="to-bottom">Embarque nesse <br> foguete comigo</a>
     </div>
 
-    <img src="assets/rocket-space.svg" alt="">
+    <img src="assets/to-the-stars.svg" alt="">
   </section>
 
   <section class="about-me" id="about-me">
-    <h2>Afinal, <br> Quem eu sou?</h2>
+    <h2 class="title">Afinal, <br> Quem eu sou?</h2>
 
-    <div>
+    <div class="content">
       <p>Eu me chamo <span class="mark">Roger</span>, tenho 17 anos e atualmente sou desenvolvedor <span class="mark">Full Stack web</span>. Atualmente procuro meu primeiro emprego na área de desenvolvimento, moro em <span class="mark">Minas gerais</span>.</p>
 
       <p>Meu primeiro contato com a programação foi em <span class="mark">2017</span> com C++, desde então venho conheçendo novas tecnologias e aprimorando meus conhecimentos na áera.</p>
@@ -52,62 +48,99 @@
   </section>
 
   <section class="skills">
-    <h2>Habilidades técnicas</h2>
+    <h2 class="title">Habilidades técnicas</h2>
 
-    <div class="card card-front">
-      <strong>Front-End</strong>
+    <div class="content">
+      <div class="card">
+        <img src="assets/html.svg" alt="">
+        <h2>HTML5</h2>
+        <p>Tags, Semântica, SEO, Acessibilidade, etc.</p>
+      </div>
 
-      <div class="container-skill">
-        <div class="skill-card">
-          <img src="assets/html.svg" alt="">
-          <span>HTML</span>
-        </div>
+      <div class="card">
+        <img src="assets/css.svg" alt="">
+        <h2>CSS3</h2>
+        <p>Propriedades, Seletores, Responsividade, etc.</p>
+      </div>
 
-        <div class="skill-card">
-          <img src="assets/css.svg" alt="">
-          <span>CSS</span>
-        </div>
+      <div class="card">
+        <img src="assets/javascript.svg" alt="">
+        <h2>Javascript</h2>
+        <p>Manipulação do DOM, Fetch API, ES6+, etc.</p>
+      </div>
 
-        <div class="skill-card">
-          <img src="assets/javascript.svg" alt="">
-          <span>Javascript</span>
-        </div>
+      <div class="card">
+        <img src="assets/sass.svg" alt="">
+        <h2>SASS</h2>
+        <p>Partials, Encadeamento, Variáveis, Mixins, etc.</p>
+      </div>
 
-        <div class="skill-card">
-          <img src="assets/sass.svg" alt="">
-          <span>Sass</span>
-        </div>
+      <div class="card">
+        <img src="assets/vuejs.svg" alt="">
+        <h2>VueJs</h2>
+        <p>Fundamentos, Componentização, etc.</p>
+      </div>
 
-        <div class="skill-card">
-          <img src="assets/vuejs.svg" alt="">
-          <span>Vuejs</span>
-        </div>
+      <div class="card">
+        <img src="assets/nodejs.svg" alt="">
+        <h2>NodeJs</h2>
+        <p>APIs REST e RESTful, CRUD, módulos nativos, etc.</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/typescript.svg" alt="">
+        <h2>Typescript</h2>
+        <p>Fundamentos, Tipagem, POO, etc</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/electron.svg" alt="">
+        <h2>Electron</h2>
+        <p>Aplicações dekstop completas.</p>
       </div>
     </div>
+  </section>
 
-    <div class="card card-back">
-      <strong>Back-End</strong>
+  <section class="projects">
+    <h2 class="title">Meus projetos</h2>
 
-      <div class="container-skill">
-        <div class="skill-card">
-          <img src="assets/nodejs.svg" alt="">
-          <span>Node</span>
-        </div>
-
-        <div class="skill-card">
-          <img src="assets/typescript.svg" alt="">
-          <span>Typescript</span>
-        </div>
-
-        <div class="skill-card">
-          <img src="assets/electron.svg" alt="">
-          <span>Electron</span>
-        </div>
+    <div class="tabs">
+      <div class="tab-links">
+        <button data-id="web" data-open>Web</button>
+        <button data-id="ui-clone">UI Clones</button>
+        <button data-id="outhres">Outros</button>
       </div>
+
+      <div class="tab-content">
+        <section id="web">
+          <h2>Projetos web</h2>
+          <p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Sit minima, laborum voluptas, officiis omnis temporibus? Impedit, perferendis. In voluptatibus, debitis corporis nobis iste error, ratione libero reiciendis amet facere ipsa.</p>
+        </section>
+        <section id="ui-clone">
+          <h2>UI Clones</h2>
+          <p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Sit minima, laborum voluptas, officiis omnis temporibus? Impedit, perferendis. In voluptatibus, debitis corporis nobis iste error, ratione libero reiciendis amet facere ipsa.</p>
+        </section>
+        <section id="outhres">
+          <h2>Outros</h2>
+          <p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Sit minima, laborum voluptas, officiis omnis temporibus? Impedit, perferendis. In voluptatibus, debitis corporis nobis iste error, ratione libero reiciendis amet facere ipsa.</p>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2 class="title">Contate-me</h2>
+
+    <div class="content">
+      <img src="assets/rocket-space.svg" alt="">
+
+      <p>Podemos nos conectar no <a href="https://github.com/roger3g" target="_blank">Github</a> ou no <a href="https://www.linkedin.com/in/roger-luiz/" target="_blank">linkedin</a>. Para conversas mais informais podemos nos conectar no <a href="https://www.instagram.com/rogersluiz_/" target="_blank">Instagram</a> ou no <a href="https://twitter.com/abantes_" target="_blank">Twitter</a>. <br><br>Você pode visualizar meu currículo <a href="assets/roger-luiz-front-end.pdf" target="_blank">aqui</a>.</p>
     </div>
   </section>
 
   <script type="text/javascript" src="scripts/screenLoad.js"></script>
   <script type="text/javascript" src="scripts/scroll.js"></script>
+  <script type="text/javascript" src="scripts/statusBar.js"></script>
+  <script type="text/javascript" src="scripts/tabNavegation.js"></script>
 </body>
 </html>

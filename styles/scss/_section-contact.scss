@@ -1,0 +1,33 @@
+.contact {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  .content {
+    width: 100%;
+    margin-top: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+
+    a {
+      text-decoration: none;
+      color: $color-primary;
+    }
+
+    img {
+      width: 60rem;
+      height: 60rem;
+    }
+
+    p {
+      width: 30%;
+      font-size: 2rem;
+    }
+  }
+}
