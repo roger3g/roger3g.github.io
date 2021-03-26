@@ -19,7 +19,7 @@ const TabNavegation = () => {
 
   const showCurrentTab = id => {
     const tabContent = document.querySelector(`#${id}`)
-    tabContent.style.display = 'block'
+    tabContent.style.display = 'flex'
   }
 
   const selectTab = event => {

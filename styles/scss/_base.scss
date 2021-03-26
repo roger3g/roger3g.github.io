@@ -6,6 +6,12 @@ $color-background-dark: #121214;
 $color-text: #A8A8B3;
 $color-title: #F0F0F7;
 
+@media (min-width: 750px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
+
 :root {
   font-size: 60%;
 }
@@ -33,7 +39,8 @@ body {
   background-color: $color-background-dark;
   font: 500 1.6rem Poppins;
 
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 h1, h2 {
@@ -42,10 +49,6 @@ h1, h2 {
 
 .mark {
   color: $color-secondary;
-}
-
-.title {
-  font-size: 4rem;
 }
 
 // background: linear-gradient(to left, rgb(45, 38, 74), rgb(32, 32, 36));

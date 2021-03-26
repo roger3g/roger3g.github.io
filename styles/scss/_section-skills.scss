@@ -1,6 +1,5 @@
 .skills {
   width: 100%;
-  height: 180vh;
 
   display: flex;
   align-items: center;
@@ -8,8 +7,7 @@
   flex-direction: column;
 
   .content {
-    margin-top: 10rem;
-    width: 90%;
+    width: 100%;
 
     display: flex;
     align-items: center;
@@ -17,11 +15,11 @@
     flex-wrap: wrap;
 
     .card {
-      width: 25rem;
-      height: 35rem;
+      width: 17rem;
+      height: 22rem;
 
       margin: 3rem 0;
-      padding: 2rem;
+      padding: 0.5rem;
 
       background-color: $color-background-light;
       border-radius: 0.8rem;
@@ -32,12 +30,49 @@
       flex-direction: column;
 
       img {
-        width: 7rem;
+        width: 4rem;
       }
 
       p, h2 {
         text-align: center;
       }
+
+      p {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      h2 {
+       font-size: 2rem;
+     }
+   }
+ }
+}
+
+@media (min-width: 750px) {
+  .skills {
+    .title {
+      font-size: 4rem;
+      margin-bottom: 5rem;
     }
-  }
+
+    .content {
+      width: 95rem;
+
+      .card {
+        width: 20rem;
+        height: 30rem;
+
+        padding: 2rem;
+
+        img {
+          width: 7rem;
+        }
+
+        p, h2 {
+          text-align: center;
+        }
+      }
+    }
+  } 
 }
