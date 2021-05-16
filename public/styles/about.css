@@ -1,0 +1,205 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#about-me, #skills {
+  width: 100%;
+  height: 600px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#skills {
+  flex-direction: row-reverse;
+}
+
+#about-me h2, #skills h2 {
+  font-size: 4rem;
+}
+
+#about-me #content {
+  width: 40%;
+}
+
+.tabs {
+  width: 50%;
+  height: 40rem;
+}
+
+.tabs .tab-links {
+  margin-bottom: 3.2rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tabs .tab-links button {
+  padding: 1.6rem;
+  cursor: pointer;
+  background: transparent;
+
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--color-title);
+  text-transform: uppercase;
+
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.tabs .tab-links button::after {
+  content: "";
+  height: 0.2rem;
+  width: 0%;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background-color: var(--color-primary);
+  transition: .4s;
+}
+
+.tabs .tab-links button:hover::after,
+.tabs .tab-links button.active::after {
+  width: 100%;
+}
+
+.tabs .tab-content {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 5rem auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabs .tab-content>section {
+  animation: up 1s;
+}
+
+#first, #second, #third {
+  width: 42rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  padding: 1.5rem;
+}
+
+#first .card, 
+#second .card, 
+#third .card {
+  width: 10rem;
+  height: 10rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  background-color: var(--color-black-light);
+
+  border-radius: .8rem;
+  margin-bottom: 2rem;
+}
+
+#first .card img, 
+#second .card img, 
+#third .card img {
+  width: 4rem;
+}
+
+#first .card span, 
+#second .card span, 
+#third .card span {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.continue {
+  width: 150px;
+  height: 40px;
+
+  position: absolute;
+  left: 0;
+  bottom: 7rem;
+
+  background-color: rgba(253, 149, 31, 10%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
+.continue span {
+  font-size: 1.3rem;
+  color: var(--color-tertiary);
+}
+
+.continue img {
+  width: 2rem;
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 750px) {
+  .block {
+    display: inline;
+  }
+
+  #about-me, #skills {
+    flex-direction: column;
+  }
+
+  #about-me {
+    width: 90%;
+    height: 40rem;
+    margin-top: 8rem;
+  }
+
+  #about-me #content{
+    width: 100%;
+    text-align: justify;
+  }
+
+  #about-me h2, #skills h2 {
+    font-size: 3rem;
+  }
+
+  .tabs {
+    width: 90%;
+  }
+
+  .continue {
+    display: none;
+  }
+
+  #first, #second, #third {
+    width: 100%;
+    padding: 0;
+  }
+}

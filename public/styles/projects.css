@@ -1,0 +1,120 @@
+body {
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  margin-top: 8rem;
+}
+
+#text {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  margin-bottom: 6rem;
+}
+
+#text h2 {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+}
+
+#content {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  padding: 2rem;
+}
+
+.repo-card {
+  width: 40rem;
+  height: 20rem;
+  padding: 2rem;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  color: var(--color-text);
+  background: var(--color-black-light);
+
+  margin: 1rem;
+  opacity: 70%;
+  border-radius: .8rem;
+}
+
+.repo-card:hover {
+  opacity: 100%; 
+}
+
+.repo-card .name {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  font-weight: bold;
+}
+
+.repo-card .name img {
+  margin-right: .5rem;
+}
+
+.repo-card .description {
+  width: 100%;
+
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.repo-card .start-fork {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.repo-card .start-fork .starts {
+  margin-right: 1rem;
+}
+
+.repo-card .start-fork .starts,
+.repo-card .start-fork .forks {
+  width: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.repo-card .start-fork .starts img,
+.repo-card .start-fork .forks img {
+  margin-right: .5rem;
+}
+
+.repo-card .start-fork .starts img {
+  margin-top: -0.2rem;
+}
+
+@media (max-width: 750px) {
+  #text span {
+    text-align: center;
+  }
+}

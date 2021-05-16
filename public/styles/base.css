@@ -1,0 +1,109 @@
+:root {
+  --color-primary: #7159C1; /* Roxo */
+  --color-secondary: #04D361; /* Verde */
+  --color-tertiary: #FD951F; /* Laranja */
+  --color-black-light: #202024;
+  --color-black-dark: #121214;
+  --color-text: #A8A8B3; /* Cinza */
+  --color-title: #F0F0F7; /* Gelo */
+  
+  font-size: 60%;
+}
+
+@media (min-width: 750px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--color-black-light);
+  border-radius: 0.2rem;
+}
+
+body {
+  font: 500 1.6rem Poppins;
+  color: var(--color-text);
+  background-color: var(--color-black-dark);
+
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  color: var(--color-title);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.mark {
+  color: var(--color-tertiary);
+}
+
+.debug {
+  border: 1px solid red;
+}
+
+.block {
+  display: block;
+}
+
+.header-general {
+  width: 100%;
+  height: 6rem;
+
+  padding: 1rem 2rem;
+  background-color: var(--color-black-light);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+.header-general #back-to-home {
+  width: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-general #back-to-home img {
+  width: 100%;
+}
+
+.header-general nav {
+  width: 15rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header-general nav a {
+  width: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-general nav a img {
+  width: 3rem;
+}

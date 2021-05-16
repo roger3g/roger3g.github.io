@@ -1,0 +1,51 @@
+main {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+main img {
+  width: 30rem;
+}
+
+main span {
+  font-size: 2rem;
+}
+
+main a {
+  padding: 2rem;
+
+  opacity: 80%;
+  color: var(--color-title);
+
+  text-decoration: none;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(32, 32, 36);
+  border-radius: 0.4rem;
+  box-shadow: inset 0 0 0 0 var(--color-secondary);
+  font-size: 1.8rem;
+  transition: ease-out 0.5s;
+}
+
+main a:hover {
+  color: black;
+  box-shadow: inset 30rem 0 0 0 var(--color-secondary);
+}
+
+@media (max-width: 750px) {
+  main span {
+    text-align: center;
+  }
+}
