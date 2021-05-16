@@ -18,7 +18,7 @@ h1 {
   text-transform: uppercase;
   left: 50%;
   top: 58%;
-  margin-left: -20px;
+  margin-left: -30px;
 }
 
 .body {
@@ -272,5 +272,15 @@ h1 {
   100% {
     left: -100%;
     opacity: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  h1 {
+    margin-left: -50px;
+  }
+
+  .body {
+    margin-left: -65px;
   }
 }
