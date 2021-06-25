@@ -1,59 +1,57 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="icon" href="assets/favicon.svg">
-  <title>Roger Luiz | Front-end Developer</title>
+  <title>Roger Luiz</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/screenLoadRocket.css">
-  <link rel="stylesheet" href="styles/home.css">
-
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-  <div class="screen-load">
-    <div class="rocket">
-      <img src="assets/rocket.png" alt="">
-    </div>
-  </div>
+  <main id="tabs">
+    <section class="tabs">
+      <div class="tab-links">
+        <button data-id="first" data-open>Sobre-mim</button>
+        <button data-id="second">Habilidades</button>
+        <button data-id="third">Contate-me</button>
+      </div>
 
-  <main id="content-main">
-    <section id="cards">
-      <a href="pages/about.html" class="card" id="card-about">
-        <p>Sobre mim</p>
+      <div class="tab-content">
+        <section id="first">
+          <h2><span class="block">Afinal,</span> Quem eu sou?</h2>
 
-        <div class="image-card-container">
-          <img src="assets/about-icon.svg" alt="Left arrow">
-        </div>
-      </a>
+          <p>Eu me chamo Roger Luiz, sou desenvolvedor <span class="mark-green">Front-End</span>. Atualmente o meu maior objetivo é trabalhar na área de tecnologia! Sou completamente apaixonado por <span class="mark-green">xadrez</span> e <span class="mark-green">enigmas</span>.</p>
+        </section>
 
-      <a href="pages/projects.html" class="card" id="card-projects">
-        <p>Meus projetos</p>
+        <section id="second">
+          <h2>Habilidades</h2>
 
-        <div class="image-card-container">
-          <img src="assets/projects-icon.svg" alt="Left arrow">
-        </div>
-      </a>
+          <div class="content">
+            <p>
+              <strong><span class="mark-orange">Front-end:</span></strong> HTML5, CSS3, Javascrip, Vuejs, Nuxtjs, Sass;
+            </p>
+            <p>
+              <strong><span class="mark-orange">Back-end:</span></strong> Nodejs, Express, Typescript;
+            </p>
+            <p>
+              <strong><span class="mark-orange">Ferramentas:</span></strong> Git, Github, Bash, Zsh, Npm, Yarn, Vercel.
+            </p>
+          </div>
+        </section>
 
-      <a href="pages/contact.html" class="card" id="card-contact">
-        <p>Contate-me</p>
+        <section id="third">
+          <img src="./assets/old_day.svg" alt="">
 
-        <div class="image-card-container">
-          <img src="assets/contact-icon.svg" alt="Left arrow">
-        </div>
-      </a>
-    </section>
-
-    <section id="image">
-      <img src="assets/to-the-stars.svg" alt="Rocket Image">
+          <p>Hey, achou algum bug no layout desse site? me chame em meu Discord: <span class="mark-green">Roger Luiz#6588</span>. Se você é desenvolvedor podemos nos seguir no <a href="https://github.com/roger3g" target="_blank">Github</a> ou no <a href="https://www.linkedin.com/in/roger-luiz/" target="_blank">Linkedin</a>, ou amigar no <a href="https://www.instagram.com/rogerluiz.dev/" target="_blank">Instagram</a> ou no <a href="https://twitter.com/abantes_" target="_blank">Twitter</a>.</p>
+        </section>
+      </div>
     </section>
   </main>
-  
-  <script type="text/javascript" src="scripts/screenLoadRocket.js"></script>
+
+  <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
