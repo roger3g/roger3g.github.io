@@ -1,0 +1,65 @@
+$dark-primary: #121214;
+$dark-secondary: #202024;
+$green-primary: #04D361;
+$green-secondary: #19BE63;
+$ice: #E1E1E6;
+$gray: #A8A8B3;
+
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, button {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  color: $gray;
+  background-color: $dark-primary;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-size: 3.5rem;
+    color: $ice;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  a {
+    color: $green-secondary;
+  }
+
+  span.block {
+    display: block;
+  }
+
+  span.mark {
+    color: $green-primary;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    height: 70rem;
+    align-items: flex-start;
+
+    span.block {
+      display: inline;
+    }
+  }
+}

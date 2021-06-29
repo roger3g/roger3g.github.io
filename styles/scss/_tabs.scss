@@ -1,0 +1,17 @@
+.tabs {
+  width: 80rem;
+  height: 50rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  .tabs {
+    width: 38rem;
+    height: 60rem;
+    justify-content: space-around;
+  }
+}
