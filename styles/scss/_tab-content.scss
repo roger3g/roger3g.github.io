@@ -32,9 +32,6 @@
   }
 
   #second {
-    // flex-direction: column;
-    // text-align: center;
-
     p {
       width: 35rem;
       text-align: center;
@@ -103,14 +100,12 @@
 
       p {
         width: 90%;
+        text-align: center;
       }
     }
 
     #second {
       flex-direction: column;
-      h2 {
-        margin-bottom: 0;
-      }
     }
 
     #third {
