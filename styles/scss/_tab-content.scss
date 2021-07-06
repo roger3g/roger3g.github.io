@@ -90,6 +90,10 @@
   .tab-content {
     height: 50rem;
 
+    #first, #second, #third {
+      height: 70%;
+    }
+
     #first {
       flex-direction: column;
 
