@@ -1,10 +1,10 @@
-$dark-primary: #121214;
-$dark-secondary: #202024;
-$green-primary: #04D361;
-$green-secondary: #19BE63;
+$dark-light: #202024;
+$dark-low: #121214;
+$green: #04D361;
+$green-light: #4FE090;
+$green-low: #11251C;
 $ice: #E1E1E6;
 $gray: #A8A8B3;
-
 
 :root {
   font-size: 62.5%;
@@ -25,7 +25,7 @@ body {
   height: 100vh;
 
   color: $gray;
-  background-color: $dark-primary;
+  background-color: $dark-low;
 
   display: flex;
   align-items: center;
@@ -41,7 +41,7 @@ body {
   }
 
   a {
-    color: $green-secondary;
+    color: $green-light;
   }
 
   span.block {
@@ -49,7 +49,7 @@ body {
   }
 
   span.mark {
-    color: $green-primary;
+    color: $green;
   }
 }
 

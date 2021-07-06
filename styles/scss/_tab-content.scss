@@ -12,14 +12,16 @@
     animation: up 1s;
   }
 
-  #first {
+  #first, #second, #third {
     width: 100%;
     height: 100%;
 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+  }
 
+  #first {
     h2 {
       width: 26rem;
     }
@@ -30,35 +32,39 @@
   }
 
   #second {
-    width: 100%;
-    height: 100%;
+    // flex-direction: column;
+    // text-align: center;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-
-    h2 {
-      margin-bottom: -8rem;
+    p {
+      width: 35rem;
+      text-align: center;
     }
 
-    .content {
-      height: 12rem;
+    #btn-projects {
+      width: 25rem;
+      height: 7rem;
+
+      border: .2rem solid $green-low;
+      border-radius: .5rem;
+
+      text-decoration: none;
+      font-size: 1.8rem;
+
+      box-shadow: inset 0 0 0 0 $green-low;
 
       display: flex;
-      align-items: flex-start;
-      justify-content: space-evenly;
-      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      transition: ease-out .3s;
+
+      &:hover {
+        box-shadow: inset 25rem 0 0 0 $green-low;
+      }
     }
   }
 
   #third {
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     flex-direction: column;
 
     img {
@@ -67,6 +73,7 @@
 
     p {
       width: 70%;
+      text-align: center;
     }
   }
 }
@@ -87,7 +94,6 @@
     height: 50rem;
 
     #first {
-      justify-content: space-evenly;
       flex-direction: column;
 
       h2 {
@@ -101,19 +107,13 @@
     }
 
     #second {
+      flex-direction: column;
       h2 {
         margin-bottom: 0;
-      }
-
-      .content {
-        height: 25rem;
-        width: 90%;
       }
     }
 
     #third {
-      flex-direction: column;
-
       p {
         width: 90%;
       }
