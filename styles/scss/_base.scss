@@ -16,23 +16,31 @@ $gray: #A8A8B3;
   box-sizing: border-box;
 }
 
+html {
+  &::-webkit-scrollbar {
+    width: .5rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $dark-light;
+    border-radius: .2rem;
+  }
+}
+
 body, button {
   font-family: 'Poppins', sans-serif;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-
   color: $gray;
   background-color: $dark-low;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   h2 {
     font-size: 3.5rem;
+    color: $ice;
+  }
+
+  h3 {
     color: $ice;
   }
 
@@ -42,22 +50,33 @@ body {
 
   a {
     color: $green-light;
+    text-decoration: none;
+  }
+
+  span.mark {
+    color: $green;
   }
 
   span.block {
     display: block;
   }
 
-  span.mark {
-    color: $green;
+  a.sr-only {
+    position: absolute;
+    width: .1rem;
+    height: .1rem;
+    border: .1rem solid red;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   body {
-    height: 70rem;
-    align-items: flex-start;
-
     span.block {
       display: inline;
     }

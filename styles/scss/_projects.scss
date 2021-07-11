@@ -1,0 +1,93 @@
+#projects {
+  width: 100%;
+  height: 70rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  .cards {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.project-card {
+  width: 30rem;
+  height: 40rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  border-radius: .5rem;
+  background-color: rgba(32, 32, 36, 0.5);
+
+  img {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+
+    nav {
+      width: 100%;
+      height: 5rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 2rem;
+
+      a {
+        width: 10rem;
+        height: 3rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        border-radius: .3rem;
+        font-size: 1rem;
+
+        text-decoration: none;
+        background-color: $green-low;
+
+        img {
+          width: 1.5rem;
+        }
+      }
+    }
+
+    .description {
+      width: 100%;
+      padding: 2rem;
+
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px){
+  #projects {
+    height: 150rem;
+
+    .cards {
+      height: 90%;
+      flex-direction: column;
+    }
+  }
+}

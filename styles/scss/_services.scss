@@ -1,0 +1,91 @@
+#services {
+  width: 100%;
+  height: 70rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  a#btn-make-budget {
+    width: 25rem;
+    height: 5rem;
+
+    font-size: 1.7rem;
+
+    border: .2rem solid $green-low;
+    border-radius: .5rem;
+
+    text-decoration: none;
+
+    color: $green;
+    background-color: $green-low;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    transition: ease-out .3s;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+.card-services {
+  width: 100%;
+  height: 60%;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  div.first, div.second {
+    border-right: .2rem solid $green-low;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: justify;
+    padding: 0 5rem;
+
+    h3 {
+      font-size: 3rem;
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+@media (max-width: 1000px){
+  #services {
+    height: 150rem;
+    // border: 1px solid red;
+  }
+
+  .card-services {
+    height: 80%;
+    // border: 1px solid red;
+
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+
+    div.first, div.second {
+      border-right: none;
+      border-bottom: .2rem solid $green-low;
+    }
+
+    div {
+      width: 35rem;
+      height: 40rem;
+      padding: 0 1rem;
+      // border: 1px solid red;
+      text-align: center;
+    }
+  }
+}

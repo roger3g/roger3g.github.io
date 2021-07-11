@@ -3,47 +3,268 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roger Luiz</title>
+  <meta name="rating" content="general">
+  <meta name="description" content="Meu site pessoal">
+  <meta name="keywords" content="Desenvolvedor, Front-end, Designer">
+  <meta name="generator" content="Sublime Text 3">
+  <meta name="author" content="Roger Luiz">
+  <meta name="copyright" content="2021 Roger Luiz">
+
+  <title>Roger Luiz | Front-end</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./styles/css/index.css">
+  <link rel="icon" type="image/png" href="./assets/superhero.png">  
+  <link rel="stylesheet" media="all" href="./styles/css/index.css">
+
 </head>
 <body>
+  <a id="top" class="sr-only"></a>
 
-  <main id="tabs">
-    <section class="tabs">
-      <div class="tab-links">
-        <button data-id="first" data-open>Sobre-mim</button>
-        <button data-id="second">Habilidades</button>
-        <button data-id="third">Contate-me</button>
+  <header>
+    <img src="./assets/code.png" id="logo" alt="Logo">
+
+    <nav>
+      <a href="https://github.com/abantes" target="_blank"> <img src="./assets/github.png" alt="Link Gihub"> </a>
+      <a href="https://www.linkedin.com/in/roger-luiz/" target="_blank"> <img src="./assets/linkedin.png" alt="Link Linkedin"> </a>
+      <a href="https://www.linkedin.com/in/roger-luiz/" target="_blank"> <img src="./assets/instagram.png" alt="Link Instagram"> </a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="welcome">
+      <div class="content">
+        <div class="division">
+          <p>Olá, eu sou</p>
+          <h2>Roger Luiz</h2>
+          <p>Desenvolvedor Front-end</p>
+        </div>
+
+        <a href="#about">Conheça-me</a>
       </div>
 
-      <div class="tab-content">
-        <section id="first">
-          <h2><span class="block">Afinal,</span> Quem eu sou?</h2>
+      <img src="./assets/programming.svg" alt="">
+    </section>
 
-          <p>Eu me chamo Roger Luiz, sou desenvolvedor <span class="mark">Front-End</span>. Atualmente o meu maior objetivo é trabalhar na área de tecnologia! Sou completamente apaixonado por <span class="mark">xadrez</span> e <span class="mark">enigmas</span>.</p>
-        </section>
+    <section id="about">
+      <a id="about" class="sr-only"></a>
+      <div id="photo"></div>
 
-        <section id="second">
-          <p>
-            HTML5, CSS3, Javascript, Vuejs, Nuxtjs, Sass, Git, Github, Linux, Npm, Yarn, Vercel.
-          </p>
+      <div class="content">
+        <p>Eu me chamo Roger Luiz, tenho 17 anos e moro em Minas Gerais. Sou desenvolvedor <span class="mark">Front-End</span>, tenho estudado sozinho desde quando comecei no universo da programação. Atualmente o meu maior objetivo é trabalhar na área de tecnologia! Sou completamente apaixonado por <span class="mark">xadrez</span> e <span class="mark">enigmas</span>.</p>
 
-          <a href="https://gist.github.com/abantes/94eb77e77ed3edbe4e6ed02b50fe5a12" target="_blank" id="btn-projects">Veja meus projetos</a>
-        </section>
+        <a href="./assets/roger-luiz-desenvolvedor-front-end-cv.pdf" target="_blank">
+          <img src="./assets/upload.png" alt="">
+          Meu currículo
+        </a>
+      </div>
+    </section>
 
-        <section id="third">
-          <img src="./assets/connected-world.svg" alt="">
+    <section id="skills">
+      <h2><span class="block">Minhas</span> Habilidades</h2>
 
-          <p>Se você é desenvolvedor podemos codar juntos no <a href="https://github.com/abantes" target="_blank">Github</a> ou no <a href="https://www.linkedin.com/in/roger-luiz/" target="_blank">Linkedin</a>, ou amigar no <a href="https://www.instagram.com/rogerluiz.dev/" target="_blank">Instagram</a> e no <a href="https://twitter.com/rogerluizz" target="_blank">Twitter</a>.</p>
+      <div id="tabs">
+        <section class="tabs">
+          <div class="tab-links">
+            <button data-id="first" data-open>Techs</button>
+            <button data-id="second">Ferramentas</button>
+            <button data-id="third">Outros</button>
+          </div>
+
+          <div class="tab-content">
+            <section id="first">
+              <div class="skill-card">
+                <img src="./assets/html5-icon.svg" alt="">
+                <span>Html5</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="./assets/css3-icon.svg" alt="">
+                <span>css3</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="./assets/javascript-icon.svg" alt="">
+                <span>javascript</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="./assets/sass-icon.svg" alt="">
+                <span>sass</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="./assets/vuejs-icon.svg" alt="">
+                <span>vuejs</span>
+              </div>
+            </section>
+
+            <section id="second">
+              <div class="skill-card">
+                <img src="./assets/git-icon.svg" alt="">
+                <span>git</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="./assets/vim-icon.svg" alt="">
+                <span>vim</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="./assets/yarn-icon.svg" alt="">
+                <span>yarn</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="./assets/npm-icon.svg" alt="">
+                <span>npm</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="./assets/babel-icon.svg" alt="">
+                <span>babel</span>
+              </div>  
+            </section>
+
+            <section id="third">
+              <div class="skill-card">
+                <img src="./assets/github-icon.svg" alt="">
+                <span>github</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="./assets/gitlab-icon.svg" alt="">
+                <span>gitlab</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="./assets/heroku-icon.svg" alt="">
+                <span>heroku</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="./assets/ubuntu-icon.svg" alt="">
+                <span>ubuntu</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="./assets/codepen-icon.svg" alt="">
+                <span>codepen</span>
+              </div>
+            </section>
+          </div>
         </section>
       </div>
     </section>
+
+    <section id="projects">
+      <h2>Meus projetos</h2>
+
+      <div class="cards">
+        <div class="project-card">
+          <img src="./assets/proffy-screenshot.svg" alt="">
+          
+          <div class="content">
+            <nav>
+              <a href="https://proffy-roger.herokuapp.com/" target="_blank">
+                <img src="./assets/link.png" alt="">
+                Website
+              </a>
+              <a href="https://github.com/abantes/proffy" target="_blank">
+                <img src="./assets/coding.png" alt="">
+                Repositório
+              </a>
+            </nav>
+
+            <div class="description">
+              <p><strong>Proffy</strong> - Encontre professores da sua região. Neste projeto fui o desenvolvedor Full-stack com foco em apresentar os melhores resultados de SEO, acessibilidade e experiência do usuário.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="./assets/fylo-screenshot.svg" alt="">
+          
+          <div class="content">
+            <nav>
+              <a href="https://fylo-roger.vercel.app/" target="_blank">
+                <img src="./assets/link.png" alt="">
+                Website
+              </a>
+              <a href="https://github.com/abantes/fylo" target="_blank">
+                <img src="./assets/coding.png" alt="">
+                Repositório
+              </a>
+            </nav>
+
+            <div class="description">
+              <p><strong>Fylo</strong> - O Fylo armazena todos os seus arquivos mais importantes em um local seguro. Acesse-os onde você precisar, compartilhe e colabore com amigos, familiares e colegas de trabalho.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="./assets/devfinances-screenshot.svg" alt="">
+          
+          <div class="content">
+            <nav>
+              <a href="https://devfinances.herokuapp.com/" target="_blank">
+                <img src="./assets/link.png" alt="">
+                Website
+              </a>
+              <a href="https://github.com/abantes/dev-finances" target="_blank">
+                <img src="./assets/coding.png" alt="">
+                Repositório
+              </a>
+            </nav>
+
+            <div class="description">
+              <p><strong>Dev Finances</strong> - Tenha o controle total de seus gastos Neste projeto fui o desenvolvedor Front-end. Este projeto foi pensado nas pessoas que buscam uma solução alterativa gratuita de gestão de finanças.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Veja mais projetos meus no meu <a href="https://github.com/abantes" target="_blank">Github</a>.</h3>
+    </section>
+
+    <section id="services">
+      <h2>Criação de sites</h2>
+
+      <div class="card-services">
+        <div class="first">
+          <h3>Design</h3>
+
+          <p>Design pensado exclusivamente para seu negócio, layouts autamente responsivos para a melhor visualização em todas as resoluções. Tudo isso usando as melhores tecnologias atuais do mercado.</p>
+        </div>
+
+        <div class="second">
+          <h3>SEO</h3>
+
+          <p>Pensado de forma estratégica, configuramos o <a href="https://pt.wikipedia.org/wiki/Otimiza%C3%A7%C3%A3o_para_motores_de_busca">SEO</a> do seu website com foco em apresentar os melhores resultados de pesquisa e rankeamento nos principais motores de buscas da internet.</p>
+        </div>
+
+        <div class="thirt">
+          <h3>Acessível</h3>
+
+          <p>Deixamos seu website o mais acessível possível para pessoas com deficiências visuais e auditivas assim alcançando o maior número de avaliações positivas para seu negócio.</p>
+        </div>
+      </div>
+
+      <a href="https://api.whatsapp.com/send?l=pt_BR&phone=5531975026103&text=Tenho%20interesse%20em%20fazer%20um%20orçamento%20com%20voçê." target="_blank" id="btn-make-budget">
+        <img src="./assets/whatsapp.svg" alt="">
+        Faça um orçamento
+      </a>
+    </section>
   </main>
 
-  <script type="text/javascript" src="./script.js"></script>
+  <footer>
+    <p>© Copyright 2021 por <strong>Roger Luiz</strong>. Todos os direitos reservados.</p>
+
+    <a href="#top"> <img src="./assets/arrow-up.png" alt="Arrow up"> </a>
+  </footer>
+
+  <script src="./scripts/tabs.js" type="text/javascript"></script>
 </body>
 </html>

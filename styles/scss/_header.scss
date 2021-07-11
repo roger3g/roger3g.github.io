@@ -1,0 +1,50 @@
+header {
+  width: 100%;
+  height: 7rem;
+
+  padding: 0 5rem;
+  background-color: $dark-light;
+
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  #logo {
+    width: 5rem;
+  }
+
+  nav {
+    width: 20rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+      width: 5rem;
+      height: 5rem;
+
+      border-radius: .5rem;
+      background-color: $dark-low;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px){
+  header {
+    padding: 0 2rem;
+  }
+}
