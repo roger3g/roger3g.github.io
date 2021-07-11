@@ -37,10 +37,9 @@ body {
 
   h2 {
     font-size: 3.5rem;
-    color: $ice;
   }
 
-  h3 {
+  h1, h3, h2 {
     color: $ice;
   }
 
@@ -50,7 +49,6 @@ body {
 
   a {
     color: $green-light;
-    text-decoration: none;
   }
 
   span.mark {

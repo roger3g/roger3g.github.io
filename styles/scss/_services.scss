@@ -42,7 +42,7 @@
   grid-template-columns: auto auto auto;
 
   div.first, div.second {
-    border-right: .2rem solid $green-low;
+    border-right: .2rem solid $green-light;
   }
 
   div {
@@ -64,27 +64,24 @@
 @media (max-width: 1000px){
   #services {
     height: 150rem;
-    // border: 1px solid red;
   }
 
   .card-services {
     height: 80%;
-    // border: 1px solid red;
-
+    
     grid-template-columns: auto;
     justify-content: center;
     align-items: center;
 
     div.first, div.second {
       border-right: none;
-      border-bottom: .2rem solid $green-low;
+      border-bottom: .2rem solid $green-light;
     }
 
     div {
       width: 35rem;
       height: 40rem;
       padding: 0 1rem;
-      // border: 1px solid red;
       text-align: center;
     }
   }

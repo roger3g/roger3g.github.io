@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: space-evenly;
 
+  background-color: $dark-light;
+
   #photo {
     width: 30rem;
     height: 30rem;
@@ -33,19 +35,24 @@
       
       font-size: 1.7rem;
 
-      border: .2rem solid $green-low;
+      border: .2rem solid $green;
       border-radius: .5rem;
 
       text-decoration: none;
 
-      color: $green;
-      background-color: $green-low;
+      color: $green-low;
+      background-color: $green;
 
       display: flex;
       align-items: center;
       justify-content: space-evenly;
 
+      opacity: 60%;
       transition: ease-out .3s;
+
+      &:hover {
+        opacity: 100%;
+      }
 
       img {
         width: 3rem;

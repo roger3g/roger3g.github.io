@@ -7,6 +7,8 @@
   justify-content: space-evenly;
   flex-direction: column;
 
+  background-color: $dark-light;
+
   .cards {
     width: 100%;
 
@@ -30,7 +32,7 @@
   flex-direction: column;
 
   border-radius: .5rem;
-  background-color: rgba(32, 32, 36, 0.5);
+  background-color: $dark-low;
 
   img {
     width: 100%;
